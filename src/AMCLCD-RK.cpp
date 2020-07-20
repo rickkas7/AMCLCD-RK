@@ -64,7 +64,7 @@ size_t AMCLCD::write(uint8_t b) {
         writeInst(INST_SET_DDRAM_ADDR | addr);
         writeData(b);
 
-        Log.info("writing %c col=%d row=%d addr=%02x", b, col, row, addr);
+        // Log.info("writing %c col=%d row=%d addr=%02x", b, col, row, addr);
 
         col++;
     }
